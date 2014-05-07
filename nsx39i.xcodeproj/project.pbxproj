@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5C39331919D1BD00687B47 /* pronounce_table.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E5C39321919D1BD00687B47 /* pronounce_table.m */; };
 		B2A0C36A1907FC9500459E36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A0C3691907FC9500459E36 /* main.m */; };
 		B2A0C3731907FD0C00459E36 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A0C3721907FD0C00459E36 /* CoreMIDI.framework */; };
 		B2A0C37719080C2100459E36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A0C37619080C2100459E36 /* Foundation.framework */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E5C39321919D1BD00687B47 /* pronounce_table.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pronounce_table.m; sourceTree = "<group>"; };
+		0E5C39341919D1E600687B47 /* pronounce_table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pronounce_table.h; sourceTree = "<group>"; };
 		B2A0C3631907FC9500459E36 /* nsx39i */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nsx39i; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A0C3691907FC9500459E36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2A0C3721907FD0C00459E36 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				B2A0C3691907FC9500459E36 /* main.m */,
+				0E5C39341919D1E600687B47 /* pronounce_table.h */,
+				0E5C39321919D1BD00687B47 /* pronounce_table.m */,
 			);
 			path = nsx39i;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5C39331919D1BD00687B47 /* pronounce_table.m in Sources */,
 				B2A0C36A1907FC9500459E36 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +245,7 @@
 				B2A0C3711907FC9500459E36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
