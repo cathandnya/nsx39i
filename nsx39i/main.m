@@ -109,13 +109,15 @@ void sendVoice(MIDIEndpointRef endPoint, NSString *pronounce, int scale, float d
 		msg[0] = 0x90;
 		msg[1] = scale;
 		msg[2] = 0x64;
-	} else {
-		msg[0] = 0xB0;
-		msg[1] = 0x78;
-		msg[2] = 0x00;
+		sendNote(endPoint, msg, 3);
 	}
-	sendNote(endPoint, msg, 3);
+	
 	[NSThread sleepForTimeInterval:base * duration];
+
+	msg[0] = 0xB0;
+	msg[1] = 0x78;
+	msg[2] = 0x00;
+	sendNote(endPoint, msg, 3);
 }
 
 #if 1
@@ -141,7 +143,6 @@ int main(int argc, char **argv)
 	sendVoice(endPoint, @"い", 0x43, 1.0 / 2.0, base);
 	sendVoice(endPoint, @"た", 0x3c, 1.0 / 2.0, base);
 	sendVoice(endPoint, @"ま", 0x3c, 1.0 / 2.0, base);
-	sendVoice(endPoint, @"", 0x3c, 0, base);
 	
     MIDIEndpointDispose(endPoint);
     return 0;
